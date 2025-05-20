@@ -1,0 +1,30 @@
+.brandshow{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.brand{
+    display: flex;
+    width: 500px;
+    height: 100%;
+}
+.brand img{
+    display: flex;
+    justify-content: center;
+    width: 185px;
+    height: 109px;
+}
+.containerProduct{
+    width: 100%;
+    height: 100vh;
+}
+.banner{
+    width: 100%;
+    height: 100%;
+}
+.banner img{
+    width: 100%;
+    height: 633px;
+    overflow: hidden;
+}

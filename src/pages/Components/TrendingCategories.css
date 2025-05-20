@@ -1,0 +1,75 @@
+.trending-categories {
+  padding: 50px 20px;
+  max-width: 1200px;
+  margin: auto;
+}
+
+.trending-categories h2 {
+  text-align: center;
+  font-size: 28px;
+  font-weight: bold;
+  margin-bottom: 40px;
+}
+
+.category-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  gap: 20px;
+}
+
+.category-card {
+  position: relative;
+  height: 320px;
+  overflow: hidden;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: transform 0.3s ease;
+}
+
+.category-card:hover {
+  transform: scale(1.03);
+}
+
+.category-card .overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+  background-position: center;
+  transition: transform 0.5s ease;
+  z-index: 1;
+}
+
+.category-card:hover .overlay {
+  transform: scale(1.05);
+}
+
+.category-card .content {
+  position: absolute;
+  bottom: 20px;
+  left: 20px;
+  z-index: 2;
+  color: white;
+  font-size: 18px;
+  font-weight: 600;
+  text-shadow: 0 0 5px rgba(0, 0, 0, 0.7);
+}
+
+.category-card .button {
+  margin-top: 10px;
+  display: inline-block;
+  padding: 8px 16px;
+  border: 2px solid white;
+  color: white;
+  font-weight: 500;
+  border-radius: 5px;
+  text-decoration: none;
+  transition: background 0.3s, color 0.3s;
+}
+
+.category-card:hover .button {
+  background: white;
+  color: black;
+}

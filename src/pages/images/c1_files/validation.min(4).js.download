@@ -1,0 +1,1 @@
+define(['jquery','mage/translate'],function($){'use strict';return function(target){$.validator.addMethod('validate-purchase-order-number',function(value){return!value||/^[0-9a-zA-Z-!@#$%^&*(),.?":{}|<> ]*$/.test(value);},$.mage.__('Please use only letters (a-z or A-Z), numbers (0-9), dash (-) or slash (/) or spaces in this field.'));return target;};});
